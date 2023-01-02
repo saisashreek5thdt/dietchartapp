@@ -1,11 +1,25 @@
+//Import Google Font
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: 'Hind', sans-serif;
 }
 
 //Tailwind CSS Imports
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+//Custom SCSS
+@import "sass/main.scss";

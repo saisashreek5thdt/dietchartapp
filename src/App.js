@@ -1,9 +1,16 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
 
 const App = () => {
   return (
     <>
-      <h1 className='text-3xl font-semibold text-emerald-500'> Hello Diet Chart APP</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} exact />
+          <Route path='/home/' element={<Home />} exact />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
