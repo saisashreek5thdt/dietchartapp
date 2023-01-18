@@ -1,0 +1,42 @@
+.about {
+    &__Container {
+        @apply relative px-6 lg:px-8;
+        &--Block {
+            @apply mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40;
+        }
+    }
+
+    &__Flex {
+        &--Box {
+            @apply hidden sm:mb-8 sm:flex sm:justify-center;
+        }
+
+        &--Box1 {
+            @apply mt-8 flex gap-x-4 sm:justify-center;
+        }
+
+        &--Div {
+            @apply relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20;
+        }
+
+        &--Text {
+            @apply text-gray-600;
+        }
+
+        &--Anchor {
+            @apply font-semibold text-indigo-600;
+            &-Span {
+                @apply absolute inset-0;
+            }
+        }
+    }
+
+    &__Heading {
+        &--Primary {
+            @apply text-4xl font-bold tracking-tight sm:text-center sm:text-6xl;
+        }
+        &--Info {
+            @apply mt-6 text-lg leading-8 text-gray-600 sm:text-center;
+        }
+    }
+}
