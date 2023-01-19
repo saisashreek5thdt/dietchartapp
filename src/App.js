@@ -7,7 +7,7 @@ import Login from './pages/Auth/Login';
 import Docboard from './pages/Dashboards/Docboard';
 import UserPlan from './pages/Dashboards/UserPlan';
 
-import {Patients, CreatePatientRecord} from "./Components/Doctor/index"
+import {Patients, CreatePatientRecord, PatientRecords, ViewPatientRecord} from "./Components/Doctor/index"
 
 const App = () => {
   return (
@@ -22,6 +22,8 @@ const App = () => {
           <Route path='/plans/' element={<UserPlan />} exact />
           <Route path="/view/patients/" element={<Patients />} exact />
           <Route path='/view/patients/create/' element={<CreatePatientRecord />} exact />
+          <Route path="/view/patients/all/records/" element={<PatientRecords />} exact />
+          <Route path='/view/patients/record/:pid/' element={<ViewPatientRecord />} exact />
         </Routes>
       </BrowserRouter>
     </>
