@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 import { HiOutlineNewspaper, HiTableCells } from "react-icons/hi2";
 
-const PatientInfo = () => {
+const SearchRecord = () => {
   return (
     <>
-      <div className="overflow-hidden bg-white shadow sm:rounded-lg">
+        <div className="overflow-hidden bg-white shadow sm:rounded-lg">
         <div className="px-4 py-5 sm:px-6">
           <h3 className="text-lg font-medium leading-6 text-gray-900">
             Applicant Information
@@ -251,7 +251,7 @@ const PatientInfo = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default PatientInfo;
+export default SearchRecord
