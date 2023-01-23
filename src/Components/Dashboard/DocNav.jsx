@@ -46,9 +46,9 @@ const DocNav = () => {
         </div>
         <Navbar.Collapse>
           <Navbar.Link href="/dashboard/" active={true}>Dashboard</Navbar.Link>
-          <Navbar.Link href="/dashboard/">Forms</Navbar.Link>
+          <Navbar.Link href="/view/forms/">Forms</Navbar.Link>
           <Navbar.Link href="/view/patients/">Patients</Navbar.Link>
-          <Navbar.Link href="/dashboard/">Diet Plans</Navbar.Link>
+          <Navbar.Link href="/view/forms/">Diet Plans</Navbar.Link>
           <Navbar.Link href="/plans/">Upgrade Plan</Navbar.Link>
         </Navbar.Collapse>
       </Navbar>

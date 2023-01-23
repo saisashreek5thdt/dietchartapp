@@ -13,49 +13,37 @@ const Docusers = () => {
                 className="cards__Img"
                 imgSrc="https://img.freepik.com/free-vector/employer-meeting-job-applicant-pre-employment-assessment-employee-evaluation-assessment-form-report-performance-review-concept-illustration_335657-2058.jpg?w=1380&t=st=1674024557~exp=1674025157~hmac=6157e45478de47ce7f17fb936c38e53d4ff0840477a5ca64f6adf62ac32f2bff"
               >
-                <h5 className="cards__Title">
-                  Patients
-                </h5>
+                <h5 className="cards__Title">Patients</h5>
+              </Card>
+            </Link>
+          </div>
+          <div className="cards__Container">
+            <Link to="/view/forms/">
+              <Card
+                className="cards__Img"
+                imgSrc="https://img.freepik.com/free-vector/memory-storage-concept-illustration_114360-3888.jpg?w=826&t=st=1674024872~exp=1674025472~hmac=c08220a20f979c09172919e2597b439662d1c9da2db554cdbcb5c3bf875f5b0e"
+              >
+                <h5 className="cards__Title">Forms</h5>
               </Card>
             </Link>
           </div>
           <div className="cards__Container">
             <Card
               className="cards__Img"
-              imgSrc="https://img.freepik.com/free-vector/memory-storage-concept-illustration_114360-3888.jpg?w=826&t=st=1674024872~exp=1674025472~hmac=c08220a20f979c09172919e2597b439662d1c9da2db554cdbcb5c3bf875f5b0e"
-            >
-              <h5 className="cards__Title">
-                Forms
-              </h5>
-            </Card>
-          </div>
-          <div className="cards__Container">
-            <Card
-              className="cards__Img"
               imgSrc="https://img.freepik.com/free-vector/nutritionist-concept-nutrition-therapy-with-healthy-food-physical-activity-weight-loss-program-diet-concept-vector-illustration-cartoon-style_613284-1316.jpg?w=1380&t=st=1674024968~exp=1674025568~hmac=7bc86e59ffcfee04a1cf91e1b1ec5bb6e1087c0054c0aa8f949798ae1c89cadf"
             >
-              <h5 className="cards__Title">
-                Diet Chart
-              </h5>
+              <h5 className="cards__Title">Diet Chart</h5>
             </Card>
           </div>
           <div className="cards__Container">
             <Card className="cards__Img">
               <div className="cards__Flex--Col">
-                <h5 className="cards__Title">
-                  Patient Count
-                </h5>
+                <h5 className="cards__Title">Patient Count</h5>
                 <div className="cards__Flex--Box">
-                  <a
-                    href="/"
-                    className="cards__Flex--Paid"
-                  >
+                  <a href="/" className="cards__Flex--Paid">
                     Paid: 18
                   </a>
-                  <a
-                    href="/"
-                    className="cards__Flex--Unpaid"
-                  >
+                  <a href="/" className="cards__Flex--Unpaid">
                     UnPaid: 20
                   </a>
                 </div>

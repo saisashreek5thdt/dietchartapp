@@ -10,3 +10,11 @@ export { default as PatientInfo } from "./PatientInfo";
 export { default as SearchPatientRecord } from "./SearchPatientRecord";
 export { default as SearchRecord } from "./SearchRecord";
 export { default as SearchForm } from "./SearchForm";
+export { default as DocForms } from "./DocForms";
+export { default as CreateForms } from "./CreateForms";
+export { default as ViewForms } from "./ViewForms";
+export { default as FormResponse } from "./FormResponse";
+export { default as CreateForm } from "./CreateForm"
+export { default as FormsType } from "./FormsType"
+export { default as ShowForm } from "./ShowForm";
+export { default as FormFormat } from "./FormFormat";
