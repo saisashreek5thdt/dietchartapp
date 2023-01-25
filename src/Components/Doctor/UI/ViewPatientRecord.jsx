@@ -1,6 +1,6 @@
 import React from "react";
-import { DocNav, DocFooter } from "../../Components/Dashboard/index";
-import { PatientInfo } from "./index";
+import { DocNav, DocFooter } from "../../Dashboard/index";
+import { PatientInfo } from "../index";
 
 const ViewPatientRecord = () => {
   return (

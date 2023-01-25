@@ -1,6 +1,6 @@
 import React from "react";
-import { DocNav, DocFooter } from "../../Components/Dashboard/index";
-import { CreateForms, ViewForms, FormResponse } from "./index";
+import { DocNav, DocFooter } from "../../Dashboard/index";
+import { CreateForms, ViewForms, FormResponse, Activation } from "../index";
 
 const DocForms = () => {
   return (
@@ -12,6 +12,7 @@ const DocForms = () => {
             <CreateForms />
             <ViewForms />
             <FormResponse />
+            <Activation />
           </div>
         </div>
       </main>

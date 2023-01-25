@@ -1,14 +1,14 @@
 import React from "react";
-import { DocNav, DocFooter } from "../../Components/Dashboard/index";
-import { FormsType } from "./index";
+import { DocNav, DocFooter } from "../../Dashboard/index";
+import { FormStates } from "../index";
 
-const CreateForm = () => {
+const FormActivations = () => {
   return (
     <>
       <DocNav />
       <main>
         <div className="dashboard__Container">
-          <FormsType />
+          <FormStates />
         </div>
       </main>
       <DocFooter />
@@ -16,4 +16,4 @@ const CreateForm = () => {
   );
 };
 
-export default CreateForm;
+export default FormActivations;

@@ -16,6 +16,7 @@ import {
   DocForms,
   CreateForm,
   ShowForm,
+  FormActivations,
 } from "./Components/Doctor/index";
 
 const App = () => {
@@ -53,6 +54,11 @@ const App = () => {
           <Route path="/view/forms/" element={<DocForms />} exact />
           <Route path="/view/forms/create/" element={<CreateForm />} exact />
           <Route path="/view/forms/format/" element={<ShowForm />} exact />
+          <Route
+            path="/view/forms/activations/"
+            element={<FormActivations />}
+            exact
+          />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import { HiOutlineNewspaper, HiTableCells } from "react-icons/hi2";
 
 const SearchRecord = () => {
   return (
     <>
-        <div className="overflow-hidden bg-white shadow sm:rounded-lg">
+      <div className="overflow-hidden bg-white shadow sm:rounded-lg">
         <div className="px-4 py-5 sm:px-6">
           <h3 className="text-lg font-medium leading-6 text-gray-900">
             Applicant Information
@@ -56,13 +56,17 @@ const SearchRecord = () => {
               </dd>
             </div>
             <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-500">Patient Height</dt>
+              <dt className="text-sm font-medium text-gray-500">
+                Patient Height
+              </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-                6.5 
+                6.5
               </dd>
             </div>
             <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-500">Patient Weight</dt>
+              <dt className="text-sm font-medium text-gray-500">
+                Patient Weight
+              </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
                 72
               </dd>
@@ -112,15 +116,19 @@ const SearchRecord = () => {
               </dd>
             </div>
             <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-500">Payment Status</dt>
+              <dt className="text-sm font-medium text-gray-500">
+                Payment Status
+              </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
                 Active
               </dd>
             </div>
             <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-              <dt className="text-sm font-medium text-gray-500">Patient Amount</dt>
+              <dt className="text-sm font-medium text-gray-500">
+                Patient Amount
+              </dt>
               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-              &#x20B9; 2489
+                &#x20B9; 2489
               </dd>
             </div>
             <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -251,7 +259,7 @@ const SearchRecord = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default SearchRecord
+export default SearchRecord;

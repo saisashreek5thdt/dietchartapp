@@ -1,6 +1,6 @@
 import React from "react";
-import { DocNav, DocFooter } from "../../Components/Dashboard/index";
-import { SearchRecord, SearchForm } from "./index";
+import { DocNav, DocFooter } from "../../Dashboard/index";
+import { SearchRecord, SearchForm } from "../index";
 
 const SearchPatientRecord = () => {
   return (

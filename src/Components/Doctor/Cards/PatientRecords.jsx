@@ -1,7 +1,6 @@
 import React from "react";
-import { DocNav, DocFooter } from "../../Components/Dashboard/index";
+import { DocNav, DocFooter } from "../../Dashboard/index";
 import { Card, Table, Checkbox } from "flowbite-react";
-import { HiCurrencyRupee } from "react-icons/hi";
 
 const PatientRecords = () => {
   return (
