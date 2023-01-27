@@ -19,6 +19,9 @@ import {
   FormActivations,
 } from "./Components/Doctor/index";
 
+import Patientboard from "./pages/Dashboards/Patientboard";
+import { ViewForms } from "./Components/Patient/index";
+
 const App = () => {
   return (
     <>
@@ -59,6 +62,8 @@ const App = () => {
             element={<FormActivations />}
             exact
           />
+          <Route path="/dashboard/patient/" element={<Patientboard />} exact />
+          <Route path="/view/patient/forms/" element={<ViewForms />} exact />
         </Routes>
       </BrowserRouter>
     </>

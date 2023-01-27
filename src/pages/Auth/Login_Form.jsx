@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Login_Form = () => {
   let navigate = useNavigate();
@@ -48,6 +48,15 @@ const Login_Form = () => {
         >
           Sign up
         </a>
+      </div>
+      <div className="mt-3 text-2xl font-display font-semibold text-gray-700 text-center">
+       <Link
+          to='/dashboard/patient/'
+          onClick={() => navigate('/dashboard/patient/')}
+          className="cursor-pointer text-indigo-600 hover:text-indigo-800"
+        >
+          Login as Patient
+        </Link>
       </div>
       <div className="mt-2 text-xl font-display font-semibold text-gray-700 text-center">
         <a
