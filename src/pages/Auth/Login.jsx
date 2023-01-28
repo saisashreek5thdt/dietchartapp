@@ -6,30 +6,30 @@ const Login = () => {
 
   return (
     <>
-      <div className="lg:flex">
-        <div className="lg:w-1/2 xl:max-w-screen-sm">
-          <div className="py-12 bg-indigo-100 lg:bg-white flex justify-center lg:justify-start lg:px-12">
-            <div className="cursor-pointer flex items-center">
+      <div className="login__Container">
+        <div className="login__Screen--Left">
+          <div className="login__Logo--Box">
+            <div className="login__Logo--Flex">
               <Link to="/login/">
-                <div className="text-2xl text-indigo-800 tracking-wide ml-2 font-semibold">
+                <div className="login__Logo--Text">
                   DietChartAPP
                 </div>
               </Link>
             </div>
           </div>
-          <div className="mt-10 px-12 sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
+          <div className="login__Form--Box">
             <h2
-              className="text-center text-4xl text-indigo-900 font-display font-semibold lg:text-left xl:text-5x xl:text-bold"
+              className="login__Form--Heading font-display xl:text-5x xl:text-bold"
             >
               Log in
             </h2>
-            <div className="mt-12">
+            <div className="login__Form--Top-1">
               <LoginForm />
             </div>
           </div>
         </div>
-        <div className="hidden lg:flex items-center justify-center bg-indigo-100 flex-1 h-screen">
-          <div className="max-w-xs transform duration-200 hover:scale-110 cursor-pointer"></div>
+        <div className="login__Screen--Right">
+          <div className="login__Transform"></div>
         </div>
       </div>
     </>

@@ -12,56 +12,56 @@ const Login_Form = () => {
     <>
       <form onSubmit={nav}>
         <div>
-          <div className="text-sm font-bold text-gray-700 tracking-wide">
+          <div className="login__Form--Label">
             Email Address
           </div>
           <input
-            className="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500"
-            type=""
+            className="login__Form--Input"
+            type="email"
             placeholder="mike@gmail.com"
           />
         </div>
-        <div className="mt-8">
-          <div className="flex justify-between items-center">
-            <div className="text-sm font-bold text-gray-700 tracking-wide">
+        <div className="login__Form--Top-2">
+          <div className="login__Form--Flex">
+            <div className="login__Form--Label">
               Password
             </div>
             <div></div>
           </div>
           <input
-            className="w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500"
-            type=""
+            className="login__Form--Input"
+            type="password"
             placeholder="Enter your password"
           />
         </div>
-        <div className="mt-10">
-          <button className="bg-indigo-500 text-gray-100 p-4 w-full rounded-full tracking-wide font-semibold font-display focus:outline-none focus:shadow-outline hover:bg-indigo-600 shadow-lg">
+        <div className="login__Form--Top-3">
+          <button className="login__Form--Button font-display focus:shadow-outline">
             Log In
           </button>
         </div>
       </form>
-      <div className="mt-12 text-sm font-display font-semibold text-gray-700 text-center">
+      <div className="login__Form--Block-1 font-display">
         Don't have an account ?{" "}
         <a
           href="/login/"
-          className="cursor-pointer text-indigo-600 hover:text-indigo-800"
+          className="login__Form--Block-1_Hover"
         >
           Sign up
         </a>
       </div>
-      <div className="mt-3 text-2xl font-display font-semibold text-gray-700 text-center">
+      <div className="login__Form--Block-2 font-display">
        <Link
           to='/dashboard/patient/'
           onClick={() => navigate('/dashboard/patient/')}
-          className="cursor-pointer text-indigo-600 hover:text-indigo-800"
+          className="login__Form--Block-2_Hover"
         >
           Login as Patient
         </Link>
       </div>
-      <div className="mt-2 text-xl font-display font-semibold text-gray-700 text-center">
+      <div className="login__Form--Block-3 font-display">
         <a
           href="/login/"
-          className="text-base font-display font-semibold text-indigo-600 hover:text-indigo-800 cursor-pointer"
+          className="login__Form--Block-3_Hover font-display"
         >
           Forgot Password?
         </a>
