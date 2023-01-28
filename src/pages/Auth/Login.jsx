@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import LoginForm from "./Login_Form";
 
 const Login = () => {  
@@ -9,9 +10,11 @@ const Login = () => {
         <div className="lg:w-1/2 xl:max-w-screen-sm">
           <div className="py-12 bg-indigo-100 lg:bg-white flex justify-center lg:justify-start lg:px-12">
             <div className="cursor-pointer flex items-center">
-              <div className="text-2xl text-indigo-800 tracking-wide ml-2 font-semibold">
-                DietChartAPP
-              </div>
+              <Link to="/login/">
+                <div className="text-2xl text-indigo-800 tracking-wide ml-2 font-semibold">
+                  DietChartAPP
+                </div>
+              </Link>
             </div>
           </div>
           <div className="mt-10 px-12 sm:px-24 md:px-48 lg:px-12 lg:mt-16 xl:px-24 xl:max-w-2xl">
