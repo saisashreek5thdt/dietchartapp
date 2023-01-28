@@ -29,27 +29,27 @@ const About = () => {
               <div className="about__Flex--Box1">
                 <a
                   href="/"
-                  className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
+                  className="about__Flex--Inline-1"
                 >
                   Get started
-                  <span className="text-indigo-200" aria-hidden="true">
+                  <span className="about__Flex--Inline-1-Span" aria-hidden="true">
                     &rarr;
                   </span>
                 </a>
                 <a
                   href="/"
-                  className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+                  className="about__Flex--Inline-2"
                 >
                   Live demo
-                  <span className="text-gray-400" aria-hidden="true">
+                  <span className="about__Flex--Inline-2-Span" aria-hidden="true">
                     &rarr;
                   </span>
                 </a>
               </div>
             </div>
-            <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+            <div className="about__Color--Box">
               <svg
-                className="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+                className="about__Color--Shape"
                 viewBox="0 0 1155 678"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

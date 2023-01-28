@@ -29,6 +29,25 @@
                 @apply absolute inset-0;
             }
         }
+
+        &--Inline-1 {
+            @apply inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700;
+
+            &-Span {
+                @apply text-indigo-200;
+            }
+
+        }
+
+        &--Inline-2 {
+            @apply inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20;
+
+            &-Span {
+                @apply text-gray-400;
+            }
+
+        }
+
     }
 
     &__Heading {
@@ -39,4 +58,14 @@
             @apply mt-6 text-lg leading-8 text-gray-600 sm:text-center;
         }
     }
+
+    &__Color {
+        &--Box {
+            @apply absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)];
+        }
+        &--Shape {
+            @apply relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem];
+        }
+    }
+
 }
