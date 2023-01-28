@@ -9,11 +9,16 @@ import {
 } from "react-icons/fi";
 
 const Bottombar = () => {
+
+  const getYear = () => {
+    return new Date().getFullYear();
+  }
+
   return (
     <>
       <Footer container={true}>
-        <div className="w-full">
-          <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
+        <div className="footer__Width">
+          <div className="footer__Box">
             <div>
               <Footer.Brand
                 href="/"
@@ -22,7 +27,7 @@ const Bottombar = () => {
                 name="Flowbite"
               />
             </div>
-            <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+            <div className="footer__Grid">
               <div>
                 <Footer.Title title="about" />
                 <Footer.LinkGroup col={true}>
@@ -47,9 +52,9 @@ const Bottombar = () => {
             </div>
           </div>
           <Footer.Divider />
-          <div className="w-full sm:flex sm:items-center sm:justify-between">
-            <Footer.Copyright href="#" by="Flowbite™" year={2023} />
-            <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+          <div className="footer__Flex--1">
+            <Footer.Copyright href="#" by="Diet Chart APP" year={getYear()} />
+            <div className="footer__Flex--2">
               <Footer.Icon href="#" icon={FiFacebook} />
               <Footer.Icon href="#" icon={FiInstagram} />
               <Footer.Icon href="#" icon={FiTwitter} />
