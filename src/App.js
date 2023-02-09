@@ -20,7 +20,7 @@ import {
 } from "./Components/Doctor/index";
 
 import Patientboard from "./pages/Dashboards/Patientboard";
-import { ViewForms } from "./Components/Patient/index";
+import { ViewForms, ViewPrescriptions } from "./Components/Patient/index";
 
 const App = () => {
   return (
@@ -64,6 +64,7 @@ const App = () => {
           />
           <Route path="/dashboard/patient/" element={<Patientboard />} exact />
           <Route path="/view/patient/forms/" element={<ViewForms />} exact />
+          <Route path="/view/patient/prescriptions/" element={<ViewPrescriptions />} exact />
         </Routes>
       </BrowserRouter>
     </>
