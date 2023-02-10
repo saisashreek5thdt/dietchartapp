@@ -11,6 +11,8 @@ export { default as ViewDiets } from "./Cards/ViewDiets";
 export { default as Prescriptions } from "./Cards/Prescriptions";
 export { default as Count } from "./Cards/Count";
 export { default as Appointment } from "./Cards/Appointment";
+export { default as LatestPrescriptions } from "./Cards/LatestPrescriptions";
+export { default as OldPrescriptions } from "./Cards/OldPrescriptions";
 
 // Only List UI
 export { default as FormTabs } from "./List/FormTabs";
