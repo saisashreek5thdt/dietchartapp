@@ -1,8 +1,16 @@
-import React from "react";
-import { Card } from "flowbite-react";
+import React, { useState } from "react";
+import { Card, Modal } from "flowbite-react";
+// eslint-disable-next-line
 import Close from "../UI/Close";
 
 const LatestPrescriptions = () => {
+
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const handleModalOpen = () =>{
+        setModalIsOpen(true)
+      }
+
     return (
         <>
             <div className="cards__Container">
@@ -10,21 +18,57 @@ const LatestPrescriptions = () => {
                     <div className="cards__Flex--Col">
                         <h5 className="cards__Title">Prescriptions</h5>
                         <div className="cards__Flex--Box">
-                            <button
+                            {/* <button
                                 type="button"
                                 className="cards__Flex--New"
                                 data-modal-target="newPrescriptionsModal"
                                 data-modal-toggle="newPrescriptionsModal"
                             >
                                 View Latest Prescriptions
-                            </button>
+                            </button> */}
+                            <React.Fragment>
+                                <button type="button" className="cards__Flex--New" onClick={handleModalOpen}>
+                                View Latest Prescriptions
+                                </button>
+                                <Modal
+                                    show={modalIsOpen}
+                                    onClose={() => setModalIsOpen(false)}
+                                >
+                                    <Modal.Header>
+                                        View Latest Prescriptions
+                                    </Modal.Header>
+                                    <Modal.Body>
+                                        <div className="space-y-6">
+                                            <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                                View Latest Prescriptions
+                                            </p>
+                                        </div>
+                                    </Modal.Body>
+                                    <Modal.Footer>
+                                        <button
+                                            type="button"
+                                            className="modal__Footer--Btn-Accept"
+                                            onClick={() => setModalIsOpen(false)}
+                                        >
+                                            Okay
+                                        </button>
+                                        <button
+                                            type="button"
+                                            className="modal__Footer--Btn-Reject"
+                                            onClick={() => setModalIsOpen(false)}
+                                        >
+                                            Close
+                                        </button>
+                                    </Modal.Footer>
+                                </Modal>
+                            </React.Fragment>
                         </div>
                     </div>
                 </Card>
             </div>
-            <div
+            {/* <div
                 id="newPrescriptionsModal"
-                data-modal-backdrop="static"
+                data-modal-backdrop="newPrescriptionsModal"
                 tabIndex="-1"
                 aria-hidden="true"
                 className="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
@@ -66,7 +110,7 @@ const LatestPrescriptions = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     );
 };
