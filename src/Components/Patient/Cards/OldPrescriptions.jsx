@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Card, Modal } from "flowbite-react";
 // eslint-disable-next-line
 import Close from "../UI/Close";
+import { ViewOldPrescriptions } from "../index";
 
 const OldPrescriptions = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -43,7 +44,7 @@ const OldPrescriptions = () => {
                                     <Modal.Body>
                                         <div className="space-y-6">
                                             <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                                View Old Prescriptions
+                                                <ViewOldPrescriptions />
                                             </p>
                                         </div>
                                     </Modal.Body>
@@ -55,7 +56,7 @@ const OldPrescriptions = () => {
                                                 setModalIsOpen(false)
                                             }
                                         >
-                                            Okay
+                                            Download Old Prescriptions
                                         </button>
                                         <button
                                             type="button"

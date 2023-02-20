@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Card, Modal } from "flowbite-react";
 // eslint-disable-next-line
 import Close from "../UI/Close";
+import { ViewLatestPrescription } from "../index"
 
 const LatestPrescriptions = () => {
 
@@ -31,6 +32,7 @@ const LatestPrescriptions = () => {
                                 View Latest Prescriptions
                                 </button>
                                 <Modal
+                                    size="4xl"
                                     show={modalIsOpen}
                                     onClose={() => setModalIsOpen(false)}
                                 >
@@ -38,10 +40,10 @@ const LatestPrescriptions = () => {
                                         View Latest Prescriptions
                                     </Modal.Header>
                                     <Modal.Body>
-                                        <div className="space-y-6">
+                                        <div className="space-y-0 scroll-auto">
                                             <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                                View Latest Prescriptions
-                                            </p>
+                                                <ViewLatestPrescription />
+                                            </p>                                            
                                         </div>
                                     </Modal.Body>
                                     <Modal.Footer>
@@ -50,7 +52,7 @@ const LatestPrescriptions = () => {
                                             className="modal__Footer--Btn-Accept"
                                             onClick={() => setModalIsOpen(false)}
                                         >
-                                            Okay
+                                            Download Prescription
                                         </button>
                                         <button
                                             type="button"

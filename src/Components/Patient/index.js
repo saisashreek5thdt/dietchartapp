@@ -16,6 +16,8 @@ export { default as OldPrescriptions } from "./Cards/OldPrescriptions";
 
 // Only List UI
 export { default as FormTabs } from "./List/FormTabs";
+export { default as ViewLatestPrescription } from "./List/ViewLatestPrescription";
+export { default as ViewOldPrescriptions } from "./List/ViewOldPrescriptions";
 
 // Only Forms
 export { default as FormType } from "./Forms/FormType";
