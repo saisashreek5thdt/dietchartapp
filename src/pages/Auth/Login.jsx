@@ -1,6 +1,7 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from "react";
 import { Link } from "react-router-dom";
-import LoginForm from "./Login_Form";
+import Login_Opt from "./Login_Opt";
 
 const Login = () => {  
 
@@ -24,7 +25,7 @@ const Login = () => {
               Log in
             </h2>
             <div className="login__Form--Top-1">
-              <LoginForm />
+              <Login_Opt />
             </div>
           </div>
         </div>

@@ -25,7 +25,7 @@
         }
 
         &--Text {
-            @apply text-2xl text-indigo-800 tracking-wide ml-2 font-semibold;
+            @apply text-2xl text-teal-600 tracking-wide ml-2 font-semibold hover:text-teal-800;
         }
 
     }
@@ -40,7 +40,7 @@
         }
 
         &--Heading {
-            @apply text-center text-4xl text-indigo-900 font-semibold lg:text-left;
+            @apply text-center text-4xl text-cyan-600 font-semibold lg:text-center;
         }
 
         &--Top-1 {
@@ -66,7 +66,15 @@
         }
 
         &--Button {
-            @apply bg-indigo-500 text-gray-100 p-4 w-full rounded-full tracking-wide font-semibold focus:outline-none hover:bg-indigo-600 shadow-lg;
+            @apply p-4 w-full rounded-full tracking-wide font-semibold focus:outline-none shadow-lg;
+
+            &-Doc {
+                @apply bg-green-500 text-gray-100 hover:bg-green-600;
+            }
+
+            &-Patient {
+                @apply bg-sky-500 text-gray-100 hover:bg-sky-600;
+            }
         }
 
         &--Block {
