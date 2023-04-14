@@ -1,0 +1,49 @@
+.info {
+    &__Flow {
+        @apply overflow-hidden bg-white shadow sm:rounded-lg;
+        &--Space {
+            @apply px-4 py-5 sm:px-6;
+        }
+    }
+
+    &__Heading {
+        &--Primary {
+            @apply text-lg font-medium leading-6 text-gray-900;
+        }
+        &--Secondary {
+            @apply mt-1 max-w-2xl text-sm text-gray-500;
+        }
+    }
+
+    &__Border {
+        @apply border-t border-gray-200;
+    }
+
+    &__Data {
+        &--BG-1{
+            @apply bg-gray-50;
+        }
+        &--BG-2{
+            @apply bg-white;
+        }
+        &--Grid {
+            @apply px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6;
+        }
+    }
+
+    &__Heading {
+        &--Primary {
+            @apply text-sm font-medium text-gray-500;
+        }
+        &--Text {
+            @apply mt-1 text-sm font-semibold sm:col-span-2 sm:mt-0;
+        }
+        &--Active {
+            @apply text-green-900;
+        }
+        &--Regular {
+            @apply text-gray-900;
+        }
+    }
+
+}

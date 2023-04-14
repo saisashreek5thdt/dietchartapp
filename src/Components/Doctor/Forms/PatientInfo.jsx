@@ -4,16 +4,16 @@ import { PatientData, PatientAttachement } from "../index";
 const PatientInfo = () => {
   return (
     <>
-      <div className="overflow-hidden bg-white shadow sm:rounded-lg">
-        <div className="px-4 py-5 sm:px-6">
-          <h3 className="text-lg font-medium leading-6 text-gray-900">
+      <div className="info__Flow">
+        <div className="info__Flow--Space">
+          <h3 className="info__Heading--Primary">
             Applicant Information
           </h3>
-          <p className="mt-1 max-w-2xl text-sm text-gray-500">
+          <p className="info__Heading--Secondary">
             Patient details and application.
           </p>
         </div>
-        <div className="border-t border-gray-200">
+        <div className="info__Border">
           <dl>
             <PatientData />
             <PatientAttachement />

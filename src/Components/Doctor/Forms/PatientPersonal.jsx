@@ -3,41 +3,41 @@ import React from "react";
 const PatientPersonal = () => {
     return (
         <>
-            <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">Full name</dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+            <div className="info__Data--BG-2 info__Data--Grid">
+                <dt className="info__Heading--Primary">Full name</dt>
+                <dd className="info__Heading--Text info__Heading--Regular">
                     Aneesh Kapoor
                 </dd>
             </div>
-            <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
+            <div className="info__Data--BG-1 info__Data--Grid">
+                <dt className="info__Heading--Primary">
                     Patient Age
                 </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                <dd className="info__Heading--Text info__Heading--Regular">
                     48
                 </dd>
             </div>
-            <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
+            <div className="info__Data--BG-2 info__Data--Grid">
+                <dt className="info__Heading--Primary">
                     Email address
                 </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                <dd className="info__Heading--Text info__Heading--Regular">
                     aneesh.k@gmail.com
                 </dd>
             </div>
-            <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
+            <div className="info__Data--BG-1 info__Data--Grid">
+                <dt className="info__Heading--Primary">
                     Patient Height
                 </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                <dd className="info__Heading--Text info__Heading--Regular">
                     6.5
                 </dd>
             </div>
-            <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
+            <div className="info__Data--BG-2 info__Data--Grid">
+                <dt className="info__Heading--Primary">
                     Patient Weight
                 </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                <dd className="info__Heading--Text info__Heading--Regular">
                     72
                 </dd>
             </div>

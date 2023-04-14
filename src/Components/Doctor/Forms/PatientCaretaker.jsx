@@ -3,35 +3,35 @@ import React from "react";
 const PatientCaretaker = () => {
     return (
         <>
-            <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
+            <div className="info__Data--BG-1 info__Data--Grid">
+                <dt className="info__Heading--Primary">
                     Caretaker Name
                 </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                <dd className="info__Heading--Text info__Heading--Regular">
                     Akhilesh Kapoor
                 </dd>
             </div>
-            <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
+            <div className="info__Data--BG-2 info__Data--Grid">
+                <dt className="info__Heading--Primary">
                     Caretaker Relation
                 </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                <dd className="info__Heading--Text info__Heading--Regular">
                     Father
                 </dd>
             </div>
-            <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
+            <div className="info__Data--BG-1 info__Data--Grid">
+                <dt className="info__Heading--Primary">
                     Caretaker Phone Number
                 </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                <dd className="info__Heading--Text info__Heading--Regular">
                     (+91) - 994 - 488 - 3647
                 </dd>
             </div>
-            <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt className="text-sm font-medium text-gray-500">
+            <div className="info__Data--BG-2 info__Data--Grid">
+                <dt className="info__Heading--Primary">
                     Caretaker Email ID
                 </dt>
-                <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
+                <dd className="info__Heading--Text info__Heading--Regular">
                     akhilesh.k@gmail.com
                 </dd>
             </div>

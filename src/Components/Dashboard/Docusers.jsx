@@ -524,6 +524,7 @@ const Docusers = () => {
             </Card>
           </div>
         </div>
+        {/* 
         <Table hoverable={true}>
           <Table.Head>
             <Table.HeadCell className="!p-4">
@@ -597,6 +598,7 @@ const Docusers = () => {
             </Table.Row>
           </Table.Body>
         </Table>
+         */}
       </div>
     </>
   );

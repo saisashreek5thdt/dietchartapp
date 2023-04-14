@@ -2,20 +2,22 @@ import React, { useState } from "react";
 import { Card, Modal } from "flowbite-react";
 // eslint-disable-next-line
 import Close from "../UI/Close";
-import { ViewLatestPrescription } from "../index"
+import { ViewLatestPrescription } from "../index";
 
 const LatestPrescriptions = () => {
-
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
-    const handleModalOpen = () =>{
-        setModalIsOpen(true)
-      }
+    const handleModalOpen = () => {
+        setModalIsOpen(true);
+    };
 
     return (
         <>
             <div className="cards__Container">
-                <Card className="cards__Img">
+                <Card
+                    className="cards__Img"
+                    imgSrc="https://img.freepik.com/free-vector/manager-prioritizing-tasks-list_74855-5272.jpg?w=1380&t=st=1674818013~exp=1674818613~hmac=8e0a53788a05846fdc3354e2ff44a242b616a19e151b940e14bf6d39fc41ab70"
+                >
                     <div className="cards__Flex--Col">
                         <h5 className="cards__Title">Prescriptions</h5>
                         <div className="cards__Flex--Box">
@@ -28,8 +30,12 @@ const LatestPrescriptions = () => {
                                 View Latest Prescriptions
                             </button> */}
                             <React.Fragment>
-                                <button type="button" className="cards__Flex--New" onClick={handleModalOpen}>
-                                View Latest Prescriptions
+                                <button
+                                    type="button"
+                                    className="cards__Flex--New"
+                                    onClick={handleModalOpen}
+                                >
+                                    View Latest Prescriptions
                                 </button>
                                 <Modal
                                     size="4xl"
@@ -43,21 +49,25 @@ const LatestPrescriptions = () => {
                                         <div className="space-y-0 scroll-auto">
                                             <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                                                 <ViewLatestPrescription />
-                                            </p>                                            
+                                            </p>
                                         </div>
                                     </Modal.Body>
                                     <Modal.Footer>
                                         <button
                                             type="button"
                                             className="modal__Footer--Btn-Accept"
-                                            onClick={() => setModalIsOpen(false)}
+                                            onClick={() =>
+                                                setModalIsOpen(false)
+                                            }
                                         >
                                             Download Prescription
                                         </button>
                                         <button
                                             type="button"
                                             className="modal__Footer--Btn-Reject"
-                                            onClick={() => setModalIsOpen(false)}
+                                            onClick={() =>
+                                                setModalIsOpen(false)
+                                            }
                                         >
                                             Close
                                         </button>
