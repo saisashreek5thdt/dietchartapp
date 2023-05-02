@@ -31,7 +31,7 @@ const Login_Patient = () => {
                                         Email Address
                                     </div>
                                     <input
-                                        className="login__Form--Input"
+                                        className="login__Form--Input login__Form--Input-Patient"
                                         type="email"
                                         placeholder="mike@gmail.com"
                                     />
@@ -44,7 +44,7 @@ const Login_Patient = () => {
                                         <div></div>
                                     </div>
                                     <input
-                                        className="login__Form--Input"
+                                        className="login__Form--Input login__Form--Input-Patient"
                                         type="password"
                                         placeholder="Enter your password"
                                     />

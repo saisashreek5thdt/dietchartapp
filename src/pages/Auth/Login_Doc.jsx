@@ -32,7 +32,7 @@ const Login_Doc = () => {
                                         Email Address
                                     </div>
                                     <input
-                                        className="login__Form--Input"
+                                        className="login__Form--Input login__Form--Input-Doctor"
                                         type="email"
                                         placeholder="mike@gmail.com"
                                     />
@@ -45,7 +45,7 @@ const Login_Doc = () => {
                                         <div></div>
                                     </div>
                                     <input
-                                        className="login__Form--Input"
+                                        className="login__Form--Input login__Form--Input-Doctor"
                                         type="password"
                                         placeholder="Enter your password"
                                     />

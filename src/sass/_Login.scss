@@ -61,8 +61,17 @@
 
         &--Input {
             &[type="email"], &[type="password"] {
-                @apply w-full text-lg py-2 border-b border-gray-300 focus:outline-none focus:border-indigo-500;
+                @apply w-full text-lg py-2 border-b border-gray-300 focus:outline-none;
             }
+
+            &-Patient &[type="email"], &[type="password"] {
+                @apply focus:border-sky-500;
+            }
+
+            &-Doctor &[type="email"], &[type="password"] {
+                @apply focus:border-green-500;
+            }
+
         }
 
         &--Button {
