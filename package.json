@@ -25,7 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
+    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "dev": "rimraf ./build && react-scripts build && rimraf ./build/**/*.map",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -52,6 +52,7 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.8",
+    "cross-env": "^7.0.3",
     "flowbite": "^1.5.5",
     "flowbite-react": "^0.3.7",
     "node-sass": "^7.0.3",
