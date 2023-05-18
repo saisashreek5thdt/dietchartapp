@@ -60,7 +60,7 @@
         }
 
         &--Input {
-            &[type="email"], &[type="password"] {
+            &[type="email"], &[type="password"], &[type="text"], &[type="number"], &[type="date"] {
                 @apply w-full text-lg py-2 border-b border-gray-300 focus:outline-none;
             }
 
@@ -68,7 +68,7 @@
                 @apply focus:border-sky-500;
             }
 
-            &-Doctor &[type="email"], &[type="password"] {
+            &-Doctor &[type="email"], &[type="password"], &[type="text"], &[type="number"], &[type="date"] {
                 @apply focus:border-green-500;
             }
 

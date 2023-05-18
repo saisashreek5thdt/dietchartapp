@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 
-import { Login, Login_Doc, Login_Patient } from "./pages/Auth/index"
+import { Login, Login_Doc, Login_Patient, Register } from "./pages/Auth/index"
 
 import Docboard from "./pages/Dashboards/Docboard";
 import UserPlan from "./pages/Dashboards/UserPlan";
@@ -31,6 +31,7 @@ const App = () => {
           <Route path="/" element={<Home />} exact />
           <Route path="/home/" element={<Home />} exact />
           <Route path="/login/" element={<Login />} exact />
+          <Route path="/register/" element={<Register />} exact />
           <Route path="/login/doctor/" element={<Login_Doc />} exact />
           <Route path="/login/patient/" element={<Login_Patient />} exact />
           <Route path="/logout/" element={<Login />} exact />          

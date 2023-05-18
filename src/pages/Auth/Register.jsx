@@ -1,13 +1,12 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 
-const Login_Doc = () => {
+const Register = () => {
     let navigate = useNavigate();
 
     const nav = () => {
-        navigate("/dashboard/");
+        navigate("/login/");
     };
-
     return (
         <>
             <div className="login__Container">
@@ -23,7 +22,7 @@ const Login_Doc = () => {
                     </div>
                     <div className="login__Form--Box">
                         <h2 className="login__Form--Heading font-display xl:text-5x xl:text-bold">
-                            Log in As Doctor
+                            Register As Doctor
                         </h2>
                         <div className="login__Form--Top-1">
                             <form onSubmit={nav}>
@@ -50,27 +49,57 @@ const Login_Doc = () => {
                                         placeholder="Enter your password"
                                     />
                                 </div>
+                                <div className="login__Form--Top-2">
+                                    <div className="login__Form--Flex">
+                                        <div className="login__Form--Label">
+                                            Full Name
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                    <input
+                                        className="login__Form--Input login__Form--Input-Doctor"
+                                        type="text"
+                                        placeholder="Enter your Full Name"
+                                    />
+                                </div>
+                                <div className="login__Form--Top-2">
+                                    <div className="login__Form--Flex">
+                                        <div className="login__Form--Label">
+                                            Phone Number
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                    <input
+                                        className="login__Form--Input login__Form--Input-Doctor"
+                                        type="number"
+                                        placeholder="Enter your Phone Number"
+                                    />
+                                </div>
+                                <div className="login__Form--Top-2">
+                                    <div className="login__Form--Flex">
+                                        <div className="login__Form--Label">
+                                            Date of Birth
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                    <input
+                                        className="login__Form--Input login__Form--Input-Doctor"
+                                        type="date"
+                                        placeholder="Enter your Date Of Birth"
+                                    />
+                                </div>
                                 <div className="login__Form--Top-3">
                                     <button className="login__Form--Button login__Form--Button-Doc font-display focus:shadow-outline">
                                         Log In
                                     </button>
                                 </div>
                             </form>
-                            <div className="login__Form--Block-1 font-display">
-                                Don't have an account ?{" "}
-                                <a
-                                    href="/register/"
-                                    className="login__Form--Block-1_Hover"
-                                >
-                                    Sign up
-                                </a>
-                            </div>
                             <div className="login__Form--Block-3 font-display">
                                 <a
                                     href="/login/"
                                     className="login__Form--Block-3_Hover font-display"
                                 >
-                                    Forgot Password?
+                                    Already Have Account?
                                 </a>
                             </div>
                         </div>
@@ -84,4 +113,4 @@ const Login_Doc = () => {
     );
 };
 
-export default Login_Doc;
+export default Register;
